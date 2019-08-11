@@ -1,0 +1,35 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'majutsushi/tagbar'
+
+call vundle#end()
+filetype plugin indent on
+
+
+" Basic settings
+set ruler         " show the line and column number
+set laststatus=2  " always show status line
+set tabstop=4     " width of tab
+set shiftwidth=4  " width of indent by using shift >>
+set autoindent    " auto indent
+set expandtab     " use spaces to insert a tab
+set nu            " line number
+set rnu           " relative line number
+set so=10         " 10 lines to scroll
+set hlsearch      " highlight
+set incsearch     " incremental
+set wildmenu      " command-line completion
+set encoding=utf-8
+
+syntax enable
+
+" TagBar
+nmap <F8> :TagbarToggle<CR>
+
